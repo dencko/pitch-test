@@ -12,9 +12,9 @@
 
 def index():
     """prikaže uporabnike in objave"""
-    uporabniki = db(db.auth_user.id > 0).select()
-    objave = db(db.objava.id > 0).select()
-    return dict(uporabniki=uporabniki, objave=objave)    
+    users = db.(db.auth_user.id > 0).select()
+    objave = db.(db.objava.id > 0).select()
+    return dict(users=users, objave=objave)    
     
 
 
